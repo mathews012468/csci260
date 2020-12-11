@@ -2,3 +2,23 @@ These programs are meant to be run on MARS.
 
 proj1.asm, when connected to the Bitmap Display, with unit width in pixels set to 1, unit height in pixels set to 1, display width in pixels set to 512, display height in pixels set to 256, and base address for display 0x10010000 (static data), displays a square in the middle and four rectangles of the same size coming out of that square. With m=70, n=40, c1r=0xff, c1g=0, c1b=0, c2r=0xff, c2g=0xff, c2b=0xff, c3r=0xff, c3g=0xff, c3b=0xff, you get something like the swiss flag:
 https://github.com/mathews012468/csci260/blob/main/sampleView.png?raw=true
+n is the side length of the square and one of the side lengths of the rectangles, m is the length of the other side of the rectangle. c1r, c1g, c1b are the rgb values respectively of the background color, c2r, c2g, c2b are the rgb values of the rectangle, and c3r, c3g, c3b are the rgb values of the square.
+
+To run proj1.asm,
+1. open MARS
+2. create a new file
+3. copy paste the proj1.asm code into the editor
+4. modify the values of m, n, and the 9 color variables described above
+5. click tools, then Bitmap Display, then connect to MIPS (make sure the settings in the bitmap display are the same as described above)
+6. click assemble, then go
+
+The program should execute and a picture should be drawn on the bitmap display. If nothing displays, it's possible that the combination of m and n values are too large for the display, so I recommend to try smaller values.
+
+
+proj2.asm, when connected to the Digital Lab Sim, displays all of the numbers in order from a to b, inclusive. It accepts a and b values between 0 and 99, inclusive, and a must be less than or equal to b.
+
+To run proj2.asm,
+1. same as steps 1-4 above
+2. modify the values of a and b
+3. click tools, then Digital Lab Sim, then connect to MIPS
+4. click assemble, then go
