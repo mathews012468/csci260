@@ -1,4 +1,4 @@
 These programs are meant to be run on MARS. 
 
 proj1.asm, when connected to the Bitmap Display, with unit width in pixels set to 1, unit height in pixels set to 1, display width in pixels set to 512, display height in pixels set to 256, and base address for display 0x10010000 (static data), displays a square in the middle and four rectangles of the same size coming out of that square. With m=70, n=40, c1r=0xff, c1g=0, c1b=0, c2r=0xff, c2g=0xff, c2b=0xff, c3r=0xff, c3g=0xff, c3b=0xff, you get something like the swiss flag:
-![alt text](https://github.com/mathews012468/csci260/blob/main/Screen%20Shot%202020-12-11%20at%201.52.37%20PM.png?raw=true)
+![alt text](https://github.com/mathews012468/csci260/blob/main/sampleView.png?raw=true)
